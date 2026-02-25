@@ -7,6 +7,22 @@ body {
     line-height: 1.7;
 }
 
+/* WAVE ANIMATION */
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200%;
+    height: 120px;
+    background: url("data:image/svg+xml;utf8,<svg width='1440' height='120' xmlns='http://www.w3.org/2000/svg'><path d='M0 67 C 273 183 441 -49 720 67 C 999 183 1167 -49 1440 67 V 120 H 0 Z' fill='%23ffffff'/></svg>");
+    background-size: 50% 120px;
+    animation: waveMove 8s linear infinite;
+    opacity: 0.9;
+}
+@keyframes waveMove {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
 /* HERO */
 .hero {
     background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover no-repeat;
@@ -14,6 +30,12 @@ body {
     text-align: center;
     color: white;
     position: relative;
+
+    <header class="hero">
+    <h1>Become a Sponsor</h1>
+    <p>Support our mission to advance underwater robotics innovation.</p>
+    <div class="wave"></div>
+</header>
 }
 
 .hero::before {
