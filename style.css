@@ -2,42 +2,67 @@
 body {
     margin: 0;
     font-family: "Segoe UI", Arial, sans-serif;
-    background: #f2f4f7;
-    color: #333;
-    line-height: 1.6;
+    background: #ffffff;
+    color: #222;
+    line-height: 1.7;
 }
 
 /* HERO */
 .hero {
-    background: #003a70;
-    color: white;
+    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover no-repeat;
+    padding: 120px 20px;
     text-align: center;
-    padding: 80px 20px;
+    color: white;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+}
+
+.hero h1, .hero p {
+    position: relative;
+    z-index: 2;
 }
 
 .hero h1 {
-    font-size: 2.8rem;
+    font-size: 3rem;
     margin-bottom: 10px;
 }
 
-/* MAIN LAYOUT */
+/* MAIN CONTENT */
 .container {
-    max-width: 900px;
-    margin: 40px auto;
+    max-width: 850px;
+    margin: 60px auto;
     padding: 0 20px;
 }
 
-/* CARD SECTIONS */
-.card {
-    background: white;
-    padding: 35px;
-    margin-bottom: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+/* SECTION HEADERS */
+.section-title {
+    font-size: 1.8rem;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    border-bottom: 2px solid #003a70;
+    padding-bottom: 6px;
 }
 
-.card h2 {
-    margin-top: 0;
+/* LISTS */
+ul {
+    padding-left: 20px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 40px;
+    background: #f4f4f4;
+    margin-top: 80px;
+    font-size: 0.9rem;
+}
     color: #003a70;
 }
 
