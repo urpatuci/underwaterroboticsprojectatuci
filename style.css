@@ -19,10 +19,12 @@ body {
     animation: waveMove 8s linear infinite;
     opacity: 0.9;
 }
+
 @keyframes waveMove {
     from { transform: translateX(0); }
     to { transform: translateX(-50%); }
 }
+
 /* HERO */
 .hero {
     background: url('https://github.com/urpatuci/underwaterroboticsprojectatuci/blob/main/ChatGPT%20Image%20Feb%2012,%202026,%2002_31_32%20PM.png?raw=true') center/cover no-repeat;
@@ -30,12 +32,6 @@ body {
     text-align: center;
     color: white;
     position: relative;
-
-    <header class="hero">
-    <h1>Become a Sponsor</h1>
-    <p>Support our mission to advance underwater robotics innovation.</p>
-    <div class="wave"></div>
-</header>
 }
 
 .hero::before {
@@ -80,18 +76,9 @@ ul {
 /* FOOTER */
 footer {
     text-align: center;
-    padding: 40px;
-    background: #f4f4f4;
-    margin-top: 80px;
-    font-size: 0.9rem;
-}
-    color: #003a70;
-}
-
-/* FOOTER */
-footer {
-    text-align: center;
     padding: 25px;
     background: #e6e9ef;
     margin-top: 40px;
+    font-size: 0.9rem;
+    color: #003a70;
 }
